@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .Botão01 {
+            padding: 40px;
+            background-color: rgb(24, 217, 130);
+            border: 3px;
+            border-radius: 10px;
+        }
+
+        .Botão02 {
+            padding: 40px;
+            background-color: rgb(236, 10, 213);
+            border: 3px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Atividade de Boas-Vindas</h1>
+    <button class="Botão01" onclick="iniciou1()">Cadastre-se aqui!</button>
+    <script>
+        function iniciou1() {
+            let nome = window.prompt('Qual o seu nome?');
+            window.alert(`olá,${nome}!seja bem vindo(a)!`)
+        }
+
+    </script>
+    <button class="Botão02" onclick="iniciou()">Responda as perguntas aqui!</button>
+    <script>
+        function iniciou() {
+            let nome = window.prompt('Quantos anos você tem?');
+            window.alert(`Obrigada por responder!`)
+        }
+
+    </script>
+</body>
+
+</html>
