@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudação</title>
+<style>
+
+        div {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            padding: 20px;
+            background-color: rgba(17, 74, 206, 0.941);
+            justify-content: center;
+        }
+    </style>
+<body>
+    <div>
+        <button onclick="clicar()">Clique Aqui</button>
+        <p id="mensagem"></p>
+    </div>
+
+  <script>
+    function clicar() {
+
+    let nomeUsuario = prompt("Digite seu nome:");
+
+    let mensagem = "Olá, " + nomeUsuario + "! É um prazer ter você aqui.";
+
+    document.getElementById("mensagem").innerText = mensagem;
+    }
+  </script>
+
+</body>
+</html>

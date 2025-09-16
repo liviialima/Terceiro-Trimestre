@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Cliques</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+    
+      align-items: center;
+     
+    }
+
+    .container {
+      background-color: #fff;
+      
+    
+    
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #a31fdb;
+      color: white;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    
+    }
+
+    .btn:hover {
+      background-color: #a32bda;
+    }
+
+    .mensagem {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <button class="btn" onclick="contarClique()">Clique aqui!</button>
+    <div class="mensagem" id="mensagem">O botão ainda não foi clicado.</div>
+  </div>
+
+  <script>
+    let contador = 0;
+
+    function contarClique() {
+      contador++;
+      const mensagem = document.getElementById("mensagem");
+      
+      if (contador === 1) {
+        mensagem.textContent = `O botão já foi clicado 1 vez.`;
+      } else {
+        mensagem.textContent = `O botão já foi clicado ${contador} vezes.`;
+      }
+    }
+  </script>
+
+</body>
+</html>

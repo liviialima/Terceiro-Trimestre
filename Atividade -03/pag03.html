@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificação de Maioridade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+    
+   
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .mensagem {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <button class="btn" onclick="verificarIdade()">Verificar Idade</button>
+    <div class="mensagem" id="mensagem">Clique no botão para verificar sua idade.</div>
+  </div>
+
+  <script>
+    function verificarIdade() {
+      let idade = prompt("Digite sua idade:");
+      
+
+      idade = Number(idade);
+
+      const mensagem = document.getElementById("mensagem");
+
+
+      if (isNaN(idade) || idade <= 0) {
+        mensagem.textContent = "Por favor, digite uma idade válida.";
+      } else if (idade >= 18) {
+        mensagem.textContent = "Você é maior de idade.";
+      } else {
+        mensagem.textContent = "Você é menor de idade.";
+      }
+    }
+  </script>
+
+</body>
+</html>
