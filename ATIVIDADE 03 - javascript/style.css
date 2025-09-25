@@ -51,5 +51,38 @@ input[type="number"]{
     outline: none;
 }
 input[type="number"]:focus{
-    border-color: #fdc878;
+    border-color: #fdc878;/*Borda mais clara ao focar*/
+}
+button{
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: backgound-color 0.3s ease;/*Animação suave ao passar o mouse*/
+}
+button:hover{
+    background-color: #21a1f1;
+}
+.resultado-area p{
+    font-size: 1.05em;
+    margin-top: 15px;
+    padding: 5px;
+}
+.mensagem{
+    font-weight: 0.9em;
+    color: #f0f0f0;
+}
+.palpites-anteriores{
+    font-size: 0.9em;
+    color: #bbb;
+}
+.dica{
+    font-size: italic;
+    color: #ffeb3b;
+}
+.hiden{
+    display: none;/*classe para esconder elementos*/
 }
